@@ -1,0 +1,38 @@
+@import url("https://unpkg.com/normalize.css/normalize.css");
+@import "variables.scss";
+// Global styles
+body {
+  background-color: $primary-color;
+  color: $text-color;
+  font-family: "Arial", sans-serif;
+
+  #root {
+    padding: 1rem 3rem;
+  }
+}
+
+a {
+  color: $secondary-color;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: lighten($secondary-color, 10%);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $text-color;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
